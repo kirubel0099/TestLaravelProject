@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\exampl;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\examplController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+Route::get('/example',function (){
+    return view('example.example');
 });
